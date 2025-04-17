@@ -1,0 +1,1 @@
+在custom_dominantAdd中，我尝试在rec_loss中使用x_ns_hat + x_s_hat来rec_loss,另外，我让decoder的输出纬度为原来的一半

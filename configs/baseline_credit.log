@@ -1,0 +1,167 @@
+credit AdONE structural: {'dp': '3.748938 ± 1.550340', 'eoo': '25.628860 ± 4.512543', 'auc': '87.314129 ± 2.413303', 'f1': '76.706192 ± 4.633787', 'acc': '97.642667 ± 0.468939', 'prauc': '77.336313 ± 4.517204', 'ap': '60.300090 ± 6.951104'}
+credit AdONE structural: {'dp': '4.554765 ± 1.759312', 'eoo': '26.115152 ± 4.420242', 'auc': '86.555907 ± 2.723472', 'f1': '75.250329 ± 5.229343', 'acc': '97.495333 ± 0.529209', 'prauc': '75.917078 ± 5.097776', 'ap': '58.219916 ± 7.929282'}
+credit AdONE contextual: {'dp': '5.236785 ± 0.073025', 'eoo': '2.000055 ± 0.896228', 'auc': '98.484211 ± 0.101451', 'f1': '97.120000 ± 0.192758', 'acc': '99.712000 ± 0.019276', 'prauc': '97.192000 ± 0.187939', 'ap': '94.467316 ± 0.364130'}
+credit AdONE dice: {'dp': '5.071661 ± 0.123139', 'eoo': '1.207979 ± 0.942675', 'auc': '98.196491 ± 0.093098', 'f1': '96.573333 ± 0.176887', 'acc': '99.657333 ± 0.017689', 'prauc': '96.659000 ± 0.172464', 'ap': '93.435733 ± 0.332691'}
+credit AdONE path: {'dp': '2.532922 ± 0.186722', 'eoo': '7.016613 ± 1.129922', 'auc': '92.985965 ± 0.213113', 'f1': '86.673333 ± 0.404914', 'acc': '98.667333 ± 0.040491', 'prauc': '87.006500 ± 0.394791', 'ap': '75.790640 ± 0.682139'}
+credit AdONE cont_struc: {'dp': '3.395700 ± 0.159003', 'eoo': '26.434063 ± 1.423644', 'auc': '76.707111 ± 0.190688', 'f1': '56.043738 ± 0.364239', 'acc': '95.578000 ± 0.036642', 'prauc': '57.166231 ± 0.355091', 'ap': '33.652449 ± 0.390072'}
+credit AdONE path_dice: {'dp': '2.862472 ± 1.143516', 'eoo': '9.204663 ± 5.456809', 'auc': '75.845614 ± 0.377971', 'f1': '54.106667 ± 0.718146', 'acc': '95.410667 ± 0.071815', 'prauc': '55.254000 ± 0.700192', 'ap': '31.575138 ± 0.737182'}
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+credit AnomalyDAE structural: {'dp': '3.667128 ± 2.833340', 'eoo': '2.166522 ± 2.059216', 'auc': '49.118267 ± 0.605905', 'f1': '3.366271 ± 1.163400', 'acc': '90.220667 ± 0.117736', 'prauc': '5.841578 ± 1.134129', 'ap': '5.076537 ± 0.030292'}
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+credit AnomalyDAE contextual: {'dp': '3.542249 ± 2.923728', 'eoo': '1.759571 ± 0.983787', 'auc': '52.979298 ± 2.544221', 'f1': '10.660989 ± 4.834375', 'acc': '91.066667 ± 0.483921', 'prauc': '12.894490 ± 4.713540', 'ap': '5.837279 ± 0.791292'}
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+credit AnomalyDAE dice: {'dp': '1.894206 ± 1.380931', 'eoo': '3.165660 ± 2.242195', 'auc': '52.382456 ± 1.878190', 'f1': '9.526667 ± 3.568560', 'acc': '90.952667 ± 0.356856', 'prauc': '11.788500 ± 3.479346', 'ap': '5.558587 ± 0.521547'}
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+credit AnomalyDAE path: {'dp': '4.102197 ± 2.341665', 'eoo': '3.453914 ± 2.917619', 'auc': '53.768421 ± 3.052841', 'f1': '12.160000 ± 5.800398', 'acc': '91.216000 ± 0.580040', 'prauc': '14.356000 ± 5.655388', 'ap': '6.207102 ± 1.512124'}
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+credit AnomalyDAE cont_struc: {'dp': '4.332084 ± 3.279381', 'eoo': '3.555579 ± 3.731322', 'auc': '51.880392 ± 2.103498', 'f1': '8.621604 ± 4.017944', 'acc': '90.807333 ± 0.404205', 'prauc': '10.935077 ± 3.917035', 'ap': '5.531125 ± 0.652803'}
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+/home/yuchen/anaconda3/envs/pygod_env/lib/python3.10/site-packages/pygod/detector/anomalydae.py:130: UserWarning: Backbone and num_layers are not used in AnomalyDAE
+  warnings.warn("Backbone and num_layers are not used in AnomalyDAE")
+credit AnomalyDAE path_dice: {'dp': '0.535525 ± 0.310580', 'eoo': '0.986153 ± 0.764277', 'auc': '49.773684 ± 0.742563', 'f1': '4.568105 ± 1.411254', 'acc': '90.460000 ± 0.140760', 'prauc': '6.953942 ± 1.375967', 'ap': '5.000259 ± 0.060959'}
+credit CoLA structural: {'dp': '1.002171 ± 0.496051', 'eoo': '2.001443 ± 1.172096', 'auc': '50.442582 ± 0.353246', 'f1': '5.909091 ± 0.678268', 'acc': '90.478000 ± 0.068641', 'prauc': '8.320422 ± 0.661204', 'ap': '5.174824 ± 0.044061'}
+credit CoLA contextual: {'dp': '0.299582 ± 0.248606', 'eoo': '10.429664 ± 3.637216', 'auc': '69.010526 ± 0.607899', 'f1': '41.120000 ± 1.155008', 'acc': '94.112000 ± 0.115501', 'prauc': '42.592000 ± 1.126133', 'ap': '19.865884 ± 0.885945'}
+credit CoLA dice: {'dp': '0.564566 ± 0.323439', 'eoo': '12.857924 ± 1.705092', 'auc': '72.249123 ± 0.670433', 'f1': '47.273333 ± 1.273822', 'acc': '94.727333 ± 0.127382', 'prauc': '48.591500 ± 1.241976', 'ap': '25.000240 ± 1.131356'}
+credit CoLA path: {'dp': '0.509020 ± 0.298089', 'eoo': '2.070917 ± 1.652832', 'auc': '75.210526 ± 0.318990', 'f1': '52.900000 ± 0.606080', 'acc': '95.290000 ± 0.060608', 'prauc': '54.077500 ± 0.590928', 'ap': '30.342773 ± 0.611860'}
+credit CoLA cont_struc: {'dp': '0.532201 ± 0.342125', 'eoo': '8.663601 ± 2.676609', 'auc': '58.819106 ± 0.478331', 'f1': '21.875414 ± 0.913672', 'acc': '92.140667 ± 0.091915', 'prauc': '23.856026 ± 0.890726', 'ap': '8.753523 ± 0.352460'}
+credit CoLA path_dice: {'dp': '0.549853 ± 0.259637', 'eoo': '3.989134 ± 1.725198', 'auc': '62.112281 ± 0.473827', 'f1': '28.013333 ± 0.900272', 'acc': '92.801333 ± 0.090027', 'prauc': '29.813000 ± 0.877765', 'ap': '11.454907 ± 0.458146'}
+credit CONAD structural: {'dp': '5.904628 ± 0.175653', 'eoo': '15.307359 ± 1.548388', 'auc': '62.021764 ± 0.736287', 'f1': '28.142292 ± 1.413746', 'acc': '92.728000 ± 0.143071', 'prauc': '29.994250 ± 1.378177', 'ap': '11.636990 ± 0.729181'}
+credit CONAD contextual: {'dp': '9.349155 ± 0.079510', 'eoo': '6.098946 ± 0.962453', 'auc': '76.308772 ± 0.282799', 'f1': '54.986667 ± 0.537318', 'acc': '95.498667 ± 0.053732', 'prauc': '56.112000 ± 0.523885', 'ap': '32.488889 ± 0.562775'}
+credit CONAD dice: {'dp': '9.467100 ± 0.123640', 'eoo': '9.847362 ± 0.547779', 'auc': '78.392982 ± 0.493678', 'f1': '58.946667 ± 0.937988', 'acc': '95.894667 ± 0.093799', 'prauc': '59.973000 ± 0.914539', 'ap': '36.808560 ± 1.057543'}
+credit CONAD path: {'dp': '7.659654 ± 0.200056', 'eoo': '6.572760 ± 0.805759', 'auc': '74.164912 ± 0.821540', 'f1': '50.913333 ± 1.560926', 'acc': '95.091333 ± 0.156093', 'prauc': '52.140500 ± 1.521903', 'ap': '28.400373 ± 1.455354'}
+credit CONAD cont_struc: {'dp': '6.282146 ± 0.382783', 'eoo': '0.382148 ± 0.230637', 'auc': '64.186201 ± 0.336653', 'f1': '32.127237 ± 0.643049', 'acc': '93.172000 ± 0.064691', 'prauc': '33.850379 ± 0.626899', 'ap': '13.770096 ± 0.382751'}
+credit CONAD path_dice: {'dp': '6.266711 ± 0.100671', 'eoo': '4.085533 ± 0.615384', 'auc': '66.547368 ± 0.269605', 'f1': '36.440000 ± 0.512250', 'acc': '93.644000 ± 0.051225', 'prauc': '38.029000 ± 0.499444', 'ap': '16.459360 ± 0.344523'}
+credit DOMINANT structural: {'dp': '3.037192 ± 0.747397', 'eoo': '12.748052 ± 0.939166', 'auc': '59.153558 ± 0.591106', 'f1': '22.635046 ± 1.134983', 'acc': '92.170667 ± 0.114860', 'prauc': '24.625563 ± 1.106428', 'ap': '9.111724 ± 0.470666'}
+credit DOMINANT contextual: {'dp': '6.530255 ± 0.526648', 'eoo': '11.372646 ± 1.048613', 'auc': '71.228070 ± 0.456140', 'f1': '45.333333 ± 0.866667', 'acc': '94.533333 ± 0.086667', 'prauc': '46.700000 ± 0.845000', 'ap': '23.291956 ± 0.744163'}
+credit DOMINANT dice: {'dp': '6.616748 ± 0.947194', 'eoo': '11.073293 ± 0.730738', 'auc': '73.210526 ± 1.171557', 'f1': '49.100000 ± 2.225958', 'acc': '94.910000 ± 0.222596', 'prauc': '50.372500 ± 2.170309', 'ap': '26.702649 ± 2.088092'}
+credit DOMINANT path: {'dp': '3.965809 ± 0.847278', 'eoo': '1.609770 ± 1.127167', 'auc': '67.915789 ± 0.801384', 'f1': '39.040000 ± 1.522629', 'acc': '93.904000 ± 0.152263', 'prauc': '40.564000 ± 1.484564', 'ap': '18.312400 ± 1.128864'}
+credit DOMINANT cont_struc: {'dp': '3.923070 ± 0.609854', 'eoo': '0.598620 ± 0.364956', 'auc': '63.405596 ± 0.226998', 'f1': '30.636183 ± 0.433594', 'acc': '93.022000 ± 0.043620', 'prauc': '32.396773 ± 0.422705', 'ap': '12.906971 ± 0.243966'}
+credit DOMINANT path_dice: {'dp': '3.109097 ± 0.650276', 'eoo': '2.319323 ± 0.672942', 'auc': '62.950877 ± 0.455452', 'f1': '29.606667 ± 0.865358', 'acc': '92.960667 ± 0.086536', 'prauc': '31.366500 ± 0.843724', 'ap': '12.292702 ± 0.467159'}
+credit DONE structural: {'dp': '2.677228 ± 0.255484', 'eoo': '28.879654 ± 1.230470', 'auc': '85.557524 ± 0.557619', 'f1': '73.333333 ± 1.070685', 'acc': '97.301333 ± 0.108353', 'prauc': '74.048313 ± 1.043747', 'ap': '55.206139 ± 1.517378'}
+credit DONE contextual: {'dp': '4.788591 ± 0.122383', 'eoo': '1.247437 ± 1.032433', 'auc': '99.414035 ± 0.076953', 'f1': '98.886667 ± 0.146211', 'acc': '99.888667 ± 0.014621', 'prauc': '98.914500 ± 0.142556', 'ap': '97.841609 ± 0.281860'}
+credit DONE dice: {'dp': '4.757139 ± 0.178484', 'eoo': '2.414682 ± 1.655391', 'auc': '97.698246 ± 0.326599', 'f1': '95.626667 ± 0.620537', 'acc': '99.562667 ± 0.062054', 'prauc': '95.736000 ± 0.605024', 'ap': '91.667111 ± 1.151971'}
+credit DONE path: {'dp': '2.070177 ± 0.244361', 'eoo': '5.651888 ± 1.042192', 'auc': '92.782456 ± 0.330291', 'f1': '86.286667 ± 0.627553', 'acc': '98.628667 ± 0.062755', 'prauc': '86.629500 ± 0.611864', 'ap': '75.143493 ± 1.052298'}
+credit DONE cont_struc: {'dp': '3.033385 ± 0.165985', 'eoo': '23.225348 ± 1.613598', 'auc': '76.256095 ± 0.216133', 'f1': '55.182240 ± 0.412841', 'acc': '95.491333 ± 0.041532', 'prauc': '56.326370 ± 0.402473', 'ap': '32.737917 ± 0.433168'}
+credit DONE path_dice: {'dp': '3.646822 ± 0.436498', 'eoo': '12.494482 ± 2.638076', 'auc': '74.329825 ± 0.261727', 'f1': '51.226667 ± 0.497281', 'acc': '95.122667 ± 0.049728', 'prauc': '52.446000 ± 0.484849', 'ap': '28.682853 ± 0.485481'}
+credit GAE structural: {'dp': '7.675812 ± 0.105801', 'eoo': '27.998557 ± 0.921854', 'auc': '57.414108 ± 0.106799', 'f1': '19.295125 ± 0.205064', 'acc': '91.832667 ± 0.020753', 'prauc': '21.369672 ± 0.199905', 'ap': '7.867629 ± 0.068820'}
+credit GAE contextual: {'dp': '5.201401 ± 0.026079', 'eoo': '1.877945 ± 0.213903', 'auc': '98.694737 ± 0.066203', 'f1': '97.520000 ± 0.125786', 'acc': '99.752000 ± 0.012579', 'prauc': '97.582000 ± 0.122642', 'ap': '95.225662 ± 0.239119'}
+Traceback (most recent call last):
+  File "/data1/yuchen/Fair-GAD/src_7/baseline.py", line 116, in <module>
+    model_params = config[args.model][args.outlier_type]
+KeyError: 'dice'
+credit GAE dice: {'dp': '5.059866 ± 0.000000', 'eoo': '0.848665 ± 0.089213', 'auc': '99.238596 ± 0.038596', 'f1': '98.553333 ± 0.073333', 'acc': '99.855333 ± 0.007333', 'prauc': '98.589500 ± 0.071500', 'ap': '97.199982 ± 0.140845'}
+credit GAE path: {'dp': '2.711526 ± 0.053851', 'eoo': '3.916528 ± 0.311733', 'auc': '89.326316 ± 0.097743', 'f1': '79.720000 ± 0.185712', 'acc': '97.972000 ± 0.018571', 'prauc': '80.227000 ± 0.181069', 'ap': '64.567129 ± 0.286713'}
+credit GAE cont_struc: {'dp': '3.411803 ± 0.057499', 'eoo': '23.039560 ± 0.480918', 'auc': '72.020010 ± 0.056370', 'f1': '47.090789 ± 0.107674', 'acc': '94.677333 ± 0.010832', 'prauc': '48.438130 ± 0.104970', 'ap': '24.867662 ± 0.096106'}
+credit GAE path_dice: {'dp': '2.979720 ± 0.048008', 'eoo': '14.776925 ± 0.239054', 'auc': '69.024561 ± 0.056140', 'f1': '41.146667 ± 0.106667', 'acc': '94.114667 ± 0.010667', 'prauc': '42.618000 ± 0.104000', 'ap': '19.873262 ± 0.082426'}
