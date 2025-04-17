@@ -2,7 +2,7 @@
 
 repo for decaf
 
-Fair-GAD-Decaf/
+<!-- Fair-GAD-Decaf/
 │
 ├── env/
 │   └── cfgad_env.yml                      # conda or pip environment
@@ -36,7 +36,7 @@ Fair-GAD-Decaf/
 │   └── analysis_notebook.ipynb            # Optional: EDA or results summary
 │
 ├── README.md
-└── LICENSE
+└── LICENSE -->
 
 ## env
 The environment install:
@@ -52,11 +52,14 @@ outlier injection example:
 ```
 python outlier_injection.py --dataset {dataset} --model {model} -outlier_type {outlier_type}
 ```
-Argument | Options | Description
+<!-- Argument | Options | Description
 --dataset | credit, german, bail, synthetic | Dataset name
 --model | anomalous, adone, cola, conad, dominant, dmgd, done, gaan, gadnr, gae, guide, ocgnn, one, radar, scan | Graph Anomaly Detection model
---outlier_type | structural, contextual, dice, path, cont_struc, path_dice | Type of outlier injection
+--outlier_type | structural, contextual, dice, path, cont_struc, path_dice | Type of outlier injection -->
 
-## baseline eval
-
+## outlier detection eval
+outlier detection eval example:
+```
+python outlier_detection_eval.py --dataset {dataset} --model {model} -outlier_type {outlier_type}
+```
 
