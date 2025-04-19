@@ -1,0 +1,1172 @@
+AdONE:
+  cont_struc:
+    '0.0':
+      dropout: 0.0002107288870674425
+      hid_dim: 128
+      lr: 0.02072986831670986
+      num_layers: 2
+      weight_decay: 0.022006068201912192
+    '0.5':
+      dropout: 0.0012522622350694915
+      hid_dim: 128
+      lr: 0.003141799368480401
+      num_layers: 2
+      weight_decay: 0.06833327202352996
+    '1.0':
+      dropout: 0.006835403878790765
+      hid_dim: 128
+      lr: 0.02574829091058167
+      num_layers: 2
+      weight_decay: 0.07827593965958812
+  contextual:
+    '0.0':
+      dropout: 0.000508846488341484
+      hid_dim: 128
+      lr: 0.008088270482434403
+      num_layers: 2
+      weight_decay: 6.289342876674004e-05
+    '0.5':
+      dropout: 0.17823747021458378
+      hid_dim: 128
+      lr: 0.009788774521683452
+      num_layers: 2
+      weight_decay: 0.00024160503407544046
+    '1.0':
+      dropout: 0.03715404627589945
+      hid_dim: 128
+      lr: 0.009021117405786754
+      num_layers: 2
+      weight_decay: 0.00036745357962147414
+  dice:
+    '0.0':
+      dropout: 0.00015626745840675247
+      hid_dim: 128
+      lr: 0.007956607501822813
+      num_layers: 2
+      weight_decay: 0.0005972250447265195
+    '0.5':
+      dropout: 0.8470274876203342
+      hid_dim: 128
+      lr: 0.006220040652791373
+      num_layers: 2
+      weight_decay: 3.605515033208116e-05
+    '1.0':
+      dropout: 0.05884937015506583
+      hid_dim: 128
+      lr: 0.00633406554928813
+      num_layers: 2
+      weight_decay: 0.0019922773245100852
+  path:
+    '0.0':
+      dropout: 0.0011653498584159566
+      hid_dim: 128
+      lr: 0.007911580171160563
+      num_layers: 2
+      weight_decay: 2.7081397003507892e-05
+    '0.5':
+      dropout: 0.7104828415457203
+      hid_dim: 128
+      lr: 0.007108609697851793
+      num_layers: 2
+      weight_decay: 1.5181084235326402e-06
+    '1.0':
+      dropout: 0.09235722685331081
+      hid_dim: 128
+      lr: 0.008095096007580592
+      num_layers: 2
+      weight_decay: 1.3035608970488412e-06
+  path_dice:
+    '0.0':
+      dropout: 0.19417020134227764
+      hid_dim: 128
+      lr: 0.006390430716735834
+      num_layers: 2
+      weight_decay: 0.00013148427111808026
+    '0.5':
+      dropout: 0.001527033556886043
+      hid_dim: 128
+      lr: 0.013247296044228508
+      num_layers: 2
+      weight_decay: 1.2766734689689867e-06
+    '1.0':
+      dropout: 0.00036628007718724767
+      hid_dim: 128
+      lr: 0.008594859893399202
+      num_layers: 2
+      weight_decay: 0.0043275795141472385
+  structural:
+    '0.0':
+      dropout: 0.0006324391473648902
+      hid_dim: 128
+      lr: 0.07294144214465441
+      num_layers: 2
+      weight_decay: 0.19886352906770796
+    '0.5':
+      dropout: 9.199030830419788e-06
+      hid_dim: 128
+      lr: 0.08217088791083586
+      num_layers: 2
+      weight_decay: 0.03271112080337936
+    '1.0':
+      dropout: 0.11654257646089375
+      hid_dim: 128
+      lr: 0.08612363037456422
+      num_layers: 2
+      weight_decay: 0.0001008304588121165
+AnomalyDAE:
+  cont_struc:
+    '0.0':
+      dropout: 0.0002516359946053794
+      emb_dim: 64
+      hid_dim: 128
+      lr: 0.0006358234163590919
+      num_layers: 2
+      weight_decay: 0.0021213226662433918
+    '0.5':
+      dropout: 0.033508857399625634
+      emb_dim: 64
+      hid_dim: 128
+      lr: 0.00021756551843837293
+      num_layers: 2
+      weight_decay: 1.3046573930183807e-06
+    '1.0':
+      dropout: 3.7012943604153133e-06
+      emb_dim: 64
+      hid_dim: 128
+      lr: 0.0002806945612715767
+      num_layers: 2
+      weight_decay: 0.09631931997947808
+  contextual:
+    '0.0':
+      dropout: 0.0005618434263186065
+      emb_dim: 64
+      hid_dim: 128
+      lr: 0.0002461966963813336
+      num_layers: 2
+      weight_decay: 0.0006273344728520326
+    '0.5':
+      dropout: 1.7627746399372355e-05
+      emb_dim: 64
+      hid_dim: 128
+      lr: 0.00015193639370705367
+      num_layers: 2
+      weight_decay: 0.5121095918610417
+    '1.0':
+      dropout: 2.8005779723892e-06
+      emb_dim: 64
+      hid_dim: 128
+      lr: 0.0007003467667807077
+      num_layers: 2
+      weight_decay: 1.8539112121189655e-05
+  dice:
+    '0.0':
+      dropout: 4.4375581576240346e-05
+      emb_dim: 64
+      hid_dim: 128
+      lr: 0.003947341193216434
+      num_layers: 2
+      weight_decay: 1.2953945686511207e-06
+    '0.5':
+      dropout: 0.5166944926325671
+      emb_dim: 64
+      hid_dim: 128
+      lr: 0.0005078244439265947
+      num_layers: 2
+      weight_decay: 0.012292806452755711
+    '1.0':
+      dropout: 1.3243645688056462e-05
+      emb_dim: 64
+      hid_dim: 128
+      lr: 0.010986299303908108
+      num_layers: 2
+      weight_decay: 1.3854950871991548e-06
+  path:
+    '0.0':
+      dropout: 0.00048369923141741196
+      emb_dim: 64
+      hid_dim: 128
+      lr: 0.0005276130756931007
+      num_layers: 2
+      weight_decay: 0.0004566034950090363
+    '0.5':
+      dropout: 0.004282192763321491
+      emb_dim: 64
+      hid_dim: 128
+      lr: 0.0005056335960042371
+      num_layers: 2
+      weight_decay: 0.038243282206160786
+    '1.0':
+      dropout: 1.5579516687422042e-05
+      emb_dim: 64
+      hid_dim: 128
+      lr: 0.0004067342699367481
+      num_layers: 2
+      weight_decay: 8.905742913853469e-06
+  path_dice:
+    '0.0':
+      dropout: 0.7507368456172726
+      emb_dim: 64
+      hid_dim: 128
+      lr: 0.00031388947211194045
+      num_layers: 2
+      weight_decay: 1.0653997468011122e-06
+    '0.5':
+      dropout: 0.07717579604033604
+      emb_dim: 64
+      hid_dim: 128
+      lr: 0.0002907070735308495
+      num_layers: 2
+      weight_decay: 0.00016081918713035733
+    '1.0':
+      dropout: 0.00035874014849188255
+      emb_dim: 64
+      hid_dim: 128
+      lr: 0.000492906550772954
+      num_layers: 2
+      weight_decay: 5.500137780661786e-05
+  structural:
+    '0.0':
+      dropout: 0.00028157962838728373
+      emb_dim: 64
+      hid_dim: 128
+      lr: 0.00021580477612842173
+      num_layers: 2
+      weight_decay: 0.0012256842083157745
+    '0.5':
+      dropout: 8.649621758989688e-06
+      emb_dim: 64
+      hid_dim: 128
+      lr: 0.00045293722913445885
+      num_layers: 2
+      weight_decay: 0.717024607865607
+    '1.0':
+      dropout: 0.0025250175919786077
+      emb_dim: 64
+      hid_dim: 128
+      lr: 0.0003492411150263024
+      num_layers: 2
+      weight_decay: 0.11336785752162987
+CONAD:
+  cont_struc:
+    '0.0':
+      dropout: 0.0007986991558184147
+      hid_dim: 256
+      lr: 0.0019824271505284063
+      num_layers: 4
+      weight_decay: 4.5822149993072036e-05
+    '0.5':
+      dropout: 0.00018615726158275787
+      hid_dim: 256
+      lr: 0.0023108876147395
+      num_layers: 4
+      weight_decay: 0.0007075711753031316
+    '1.0':
+      dropout: 8.88986387262961e-06
+      hid_dim: 256
+      lr: 0.0026009753601932287
+      num_layers: 4
+      weight_decay: 0.00011740205667112669
+  contextual:
+    '0.0':
+      dropout: 8.40124734576639e-06
+      hid_dim: 256
+      lr: 0.003249932023821998
+      num_layers: 4
+      weight_decay: 0.0006328826345989864
+    '0.5':
+      dropout: 1.1457503156919148e-05
+      hid_dim: 256
+      lr: 0.0034212216295817803
+      num_layers: 4
+      weight_decay: 4.106645930646188e-05
+    '1.0':
+      dropout: 1.2396841975345274e-05
+      hid_dim: 256
+      lr: 0.002777052558955549
+      num_layers: 4
+      weight_decay: 1.2196666866319198e-06
+  dice:
+    '0.0':
+      dropout: 0.0017775113757698404
+      hid_dim: 256
+      lr: 0.0012860354381860365
+      num_layers: 4
+      weight_decay: 0.00013569546527734402
+    '0.5':
+      dropout: 0.309179036241199
+      hid_dim: 256
+      lr: 0.00205760662051993
+      num_layers: 4
+      weight_decay: 3.934699180580766e-05
+    '1.0':
+      dropout: 0.00038239940990932107
+      hid_dim: 256
+      lr: 0.0011484001033839066
+      num_layers: 4
+      weight_decay: 1.914806555618858e-05
+  path:
+    '0.0':
+      dropout: 0.00014775702201390173
+      hid_dim: 256
+      lr: 0.0029806446979571597
+      num_layers: 4
+      weight_decay: 1.4438474006397246e-06
+    '0.5':
+      dropout: 3.565701309427017e-06
+      hid_dim: 256
+      lr: 0.0027860572775694373
+      num_layers: 4
+      weight_decay: 3.5149080882775487e-06
+    '1.0':
+      dropout: 0.0014301811912565124
+      hid_dim: 256
+      lr: 0.00358561006844973
+      num_layers: 4
+      weight_decay: 1.926120743380149e-06
+  path_dice:
+    '0.0':
+      dropout: 0.0004236953176246118
+      hid_dim: 256
+      lr: 0.0019462621229013857
+      num_layers: 4
+      weight_decay: 0.00011285598977089138
+    '0.5':
+      dropout: 0.023522895231443398
+      hid_dim: 256
+      lr: 0.0024554096895027513
+      num_layers: 4
+      weight_decay: 0.0013264679067026297
+    '1.0':
+      dropout: 9.251857027997912e-05
+      hid_dim: 256
+      lr: 0.00169710804550246
+      num_layers: 4
+      weight_decay: 1.6697453928106742e-05
+  structural:
+    '0.0':
+      dropout: 7.357547543012107e-06
+      hid_dim: 256
+      lr: 0.004304037717749344
+      num_layers: 4
+      weight_decay: 9.03035570710387e-05
+    '0.5':
+      dropout: 1.4480486146702765e-05
+      hid_dim: 256
+      lr: 0.005113000969587715
+      num_layers: 4
+      weight_decay: 1.7856113839046564e-06
+    '1.0':
+      dropout: 5.573487272774417e-05
+      hid_dim: 256
+      lr: 0.001978554804614781
+      num_layers: 4
+      weight_decay: 0.0008382000436773782
+CoLA:
+  cont_struc:
+    '0.0':
+      dropout: 0.0029838985694100855
+      hid_dim: 128
+      lr: 0.00012580629451318482
+      num_layers: 4
+      weight_decay: 1.0916684235856079e-06
+    '0.5':
+      dropout: 0.022833693314573442
+      hid_dim: 128
+      lr: 0.00040322574582106366
+      num_layers: 4
+      weight_decay: 2.4657796194840976e-06
+    '1.0':
+      dropout: 0.15160204181996959
+      hid_dim: 128
+      lr: 0.0004286018566056723
+      num_layers: 4
+      weight_decay: 7.0353719427363135e-06
+  contextual:
+    '0.0':
+      dropout: 7.173137123595182e-05
+      hid_dim: 128
+      lr: 0.0005085353034023783
+      num_layers: 4
+      weight_decay: 3.175214987077785e-06
+    '0.5':
+      dropout: 2.9629515499478133e-05
+      hid_dim: 128
+      lr: 0.0010188609440970832
+      num_layers: 4
+      weight_decay: 3.6069172749082975e-06
+    '1.0':
+      dropout: 0.025339328695601848
+      hid_dim: 128
+      lr: 0.0005220040518464292
+      num_layers: 4
+      weight_decay: 8.569544092320241e-05
+  dice:
+    '0.0':
+      dropout: 0.27978740112900613
+      hid_dim: 128
+      lr: 0.00022846083307734186
+      num_layers: 4
+      weight_decay: 2.930229079880356e-05
+    '0.5':
+      dropout: 4.567882193305058e-06
+      hid_dim: 128
+      lr: 0.0001619503416060547
+      num_layers: 4
+      weight_decay: 1.0140272154645653e-06
+    '1.0':
+      dropout: 8.134084531217931e-05
+      hid_dim: 128
+      lr: 0.000623764705184586
+      num_layers: 4
+      weight_decay: 0.0006914851634749738
+  path:
+    '0.0':
+      dropout: 0.00031456055147933466
+      hid_dim: 128
+      lr: 0.006360742495591287
+      num_layers: 4
+      weight_decay: 1.1312431002992583e-05
+    '0.5':
+      dropout: 0.027645687168128135
+      hid_dim: 128
+      lr: 0.007712298622561164
+      num_layers: 4
+      weight_decay: 1.1651026775655189e-05
+    '1.0':
+      dropout: 0.005619460385352363
+      hid_dim: 128
+      lr: 0.0007804605523007203
+      num_layers: 4
+      weight_decay: 8.662658117384771e-06
+  path_dice:
+    '0.0':
+      dropout: 0.00012467094061029694
+      hid_dim: 128
+      lr: 0.004703106691042946
+      num_layers: 4
+      weight_decay: 0.0001459410463682586
+    '0.5':
+      dropout: 0.07546867215063559
+      hid_dim: 128
+      lr: 0.007740246659200269
+      num_layers: 4
+      weight_decay: 2.925683725174851e-05
+    '1.0':
+      dropout: 0.009426458205738456
+      hid_dim: 128
+      lr: 0.0008011284170902946
+      num_layers: 4
+      weight_decay: 4.616787825478198e-06
+  structural:
+    '0.0':
+      dropout: 0.1504490796034879
+      hid_dim: 128
+      lr: 0.0005803068906809308
+      num_layers: 4
+      weight_decay: 2.4223107921504448e-05
+    '0.5':
+      dropout: 5.9399583720492525e-06
+      hid_dim: 128
+      lr: 0.0049585683733652615
+      num_layers: 4
+      weight_decay: 0.00025165427401712423
+    '1.0':
+      dropout: 2.3368198632905345e-05
+      hid_dim: 128
+      lr: 0.0064972481578101215
+      num_layers: 4
+      weight_decay: 0.0010389848195244199
+DOMINANT:
+  cont_struc:
+    '0.0':
+      dropout: 0.0032894453505856354
+      hid_dim: 64
+      lr: 0.008746664300492719
+      num_layers: 5
+      weight_decay: 0.0003319032769472192
+    '0.5':
+      dropout: 2.649389996543284e-05
+      hid_dim: 64
+      lr: 0.003521908716502478
+      num_layers: 5
+      weight_decay: 1.855159331224555e-06
+    '1.0':
+      dropout: 0.00014648895610881073
+      hid_dim: 64
+      lr: 0.003210283631458452
+      num_layers: 5
+      weight_decay: 8.59478515857847e-06
+  contextual:
+    '0.0':
+      dropout: 0.0002545936893927681
+      hid_dim: 64
+      lr: 0.0031406146480050952
+      num_layers: 5
+      weight_decay: 2.581140333766698e-05
+    '0.5':
+      dropout: 6.611627915995732e-06
+      hid_dim: 64
+      lr: 0.0031414747405102963
+      num_layers: 5
+      weight_decay: 6.779021209663241e-06
+    '1.0':
+      dropout: 1.367220842427563e-06
+      hid_dim: 64
+      lr: 0.00802579160686887
+      num_layers: 5
+      weight_decay: 0.0002737049928093667
+  dice:
+    '0.0':
+      dropout: 0.027249369817903088
+      hid_dim: 64
+      lr: 0.010555002490197609
+      num_layers: 5
+      weight_decay: 9.449508127095137e-06
+    '0.5':
+      dropout: 2.3673215729560496e-05
+      hid_dim: 64
+      lr: 0.00020046735978645664
+      num_layers: 5
+      weight_decay: 7.960526268310357e-06
+    '1.0':
+      dropout: 0.00012910509586441636
+      hid_dim: 64
+      lr: 0.0018248433810590927
+      num_layers: 5
+      weight_decay: 5.71537750837545e-05
+  path:
+    '0.0':
+      dropout: 6.185498300287759e-05
+      hid_dim: 64
+      lr: 0.007949226363251877
+      num_layers: 5
+      weight_decay: 5.14549922309198e-05
+    '0.5':
+      dropout: 0.0009037570822579078
+      hid_dim: 64
+      lr: 0.0038703107149994473
+      num_layers: 5
+      weight_decay: 1.5367086787244757e-06
+    '1.0':
+      dropout: 2.324503236273885e-05
+      hid_dim: 64
+      lr: 0.006584429963710436
+      num_layers: 5
+      weight_decay: 5.326587159714479e-06
+  path_dice:
+    '0.0':
+      dropout: 0.000532002826870476
+      hid_dim: 64
+      lr: 0.007645932908289514
+      num_layers: 5
+      weight_decay: 0.00026011785617494835
+    '0.5':
+      dropout: 8.691142196215483e-05
+      hid_dim: 64
+      lr: 0.002137153479079332
+      num_layers: 5
+      weight_decay: 0.0010703999735021679
+    '1.0':
+      dropout: 0.0020700596281051937
+      hid_dim: 64
+      lr: 0.005128513368123237
+      num_layers: 5
+      weight_decay: 1.3479373755865117e-06
+  structural:
+    '0.0':
+      dropout: 0.00012112225717834222
+      hid_dim: 64
+      lr: 0.01398690582044269
+      num_layers: 5
+      weight_decay: 1.1035842270224425e-06
+    '0.5':
+      dropout: 0.0004060062779025534
+      hid_dim: 64
+      lr: 0.007617766858729028
+      num_layers: 5
+      weight_decay: 1.8891729460778226e-05
+    '1.0':
+      dropout: 0.00012094906499442373
+      hid_dim: 64
+      lr: 0.016069244323168346
+      num_layers: 5
+      weight_decay: 1.0444562858560668e-06
+DONE:
+  cont_struc:
+    '0.0':
+      dropout: 0.006808808644704305
+      hid_dim: 32
+      lr: 0.0015828209511488823
+      num_layers: 3
+      w1: 0.7714442227514525
+      w2: 1.0146486220214877e-05
+      w3: 0.00011691489680619286
+      w4: 0.07117140052795776
+      w5: 0.00011799260780730948
+      weight_decay: 0.0040535074165085365
+    '0.5':
+      dropout: 8.632210408988995e-05
+      hid_dim: 32
+      lr: 0.011246674260338974
+      num_layers: 3
+      w1: 0.6456217054498383
+      w2: 0.0021239028572239116
+      w3: 0.012495083324548767
+      w4: 0.049635661459800876
+      w5: 0.9249644663032728
+      weight_decay: 4.823759521788857e-06
+    '1.0':
+      dropout: 0.00018376987974644648
+      hid_dim: 32
+      lr: 0.013056252336452214
+      num_layers: 3
+      w1: 0.14772483524274432
+      w2: 0.12975891637106124
+      w3: 9.727037726458278e-05
+      w4: 1.1219879009550481e-05
+      w5: 0.030757281114517036
+      weight_decay: 1.9625749224734732e-05
+  contextual:
+    '0.0':
+      dropout: 1.16735801821998e-06
+      hid_dim: 32
+      lr: 0.0003698578325426158
+      num_layers: 3
+      w1: 0.004606451618625892
+      w2: 2.9493722124917213e-05
+      w3: 0.00013654670720062852
+      w4: 0.7538551449886738
+      w5: 2.479663945576784e-05
+      weight_decay: 0.028221728258177172
+    '0.5':
+      dropout: 0.17947457079471063
+      hid_dim: 32
+      lr: 0.009991376707527921
+      num_layers: 3
+      w1: 7.206418054376813e-05
+      w2: 0.022297923743831462
+      w3: 0.93627627780935
+      w4: 0.024420208710138457
+      w5: 0.7115970951436639
+      weight_decay: 0.0024999378436965486
+    '1.0':
+      dropout: 0.009908306467996692
+      hid_dim: 32
+      lr: 0.00021748368285644316
+      num_layers: 3
+      w1: 0.0033168805008711327
+      w2: 0.00010688164069874187
+      w3: 0.0001768905082660803
+      w4: 0.05558436074491026
+      w5: 5.478398212283587e-05
+      weight_decay: 0.04574034077235032
+  dice:
+    '0.0':
+      dropout: 3.420408224003464e-05
+      hid_dim: 32
+      lr: 0.0005812095190690486
+      num_layers: 3
+      w1: 0.0003064139949126903
+      w2: 0.09550004930235978
+      w3: 1.0396030551439474e-05
+      w4: 4.642856955836776e-05
+      w5: 0.08260963981229971
+      weight_decay: 0.000613004979156367
+    '0.5':
+      dropout: 0.00029970197440175675
+      hid_dim: 32
+      lr: 9.590042829516721e-05
+      num_layers: 3
+      w1: 0.09787016539396332
+      w2: 2.2590570382418233e-05
+      w3: 0.00017231053013982812
+      w4: 0.003699374717934652
+      w5: 0.0005883890619394348
+      weight_decay: 2.3545840683890617e-05
+    '1.0':
+      dropout: 0.00038866255106066364
+      hid_dim: 32
+      lr: 2.106972278657287e-05
+      num_layers: 3
+      w1: 2.623408127760151e-05
+      w2: 0.34058607989798667
+      w3: 1.6496203652160032e-05
+      w4: 0.3744697662587119
+      w5: 0.00010757116892536475
+      weight_decay: 8.720524073772728e-05
+  path:
+    '0.0':
+      dropout: 0.0001919205650907101
+      hid_dim: 32
+      lr: 0.0005384233965957995
+      num_layers: 3
+      w1: 0.00040771574238708004
+      w2: 0.0003116598000208969
+      w3: 9.188829280343724e-05
+      w4: 0.005397538959899554
+      w5: 0.08924775292351478
+      weight_decay: 1.1460754404581899e-05
+    '0.5':
+      dropout: 6.127323821801603e-05
+      hid_dim: 32
+      lr: 0.001356373038750195
+      num_layers: 3
+      w1: 1.4390227561400234e-05
+      w2: 0.0019446998608215155
+      w3: 4.851801393354676e-05
+      w4: 0.06822205989381602
+      w5: 0.04663402132319778
+      weight_decay: 1.356780212984626e-05
+    '1.0':
+      dropout: 6.002425211362759e-05
+      hid_dim: 32
+      lr: 0.0005638201500947027
+      num_layers: 3
+      w1: 0.033016719541806905
+      w2: 0.019006157232805816
+      w3: 0.0007384367611936264
+      w4: 0.9631521052726574
+      w5: 0.045897237636914986
+      weight_decay: 0.01315655989415377
+  path_dice:
+    '0.0':
+      dropout: 0.0006117804150016741
+      hid_dim: 32
+      lr: 0.00079067499372266
+      num_layers: 3
+      w1: 0.10662168515559836
+      w2: 0.028395950318193742
+      w3: 2.3569192785090464e-05
+      w4: 0.02932467266560974
+      w5: 0.0021372607910446887
+      weight_decay: 0.0028000227477427363
+    '0.5':
+      dropout: 0.01879364866243123
+      hid_dim: 32
+      lr: 0.0008582893214018538
+      num_layers: 3
+      w1: 0.6587211182318654
+      w2: 0.0007195340601753996
+      w3: 4.3339164556843717e-05
+      w4: 0.00732872742721385
+      w5: 0.0404118736533713
+      weight_decay: 0.03068895587566766
+    '1.0':
+      dropout: 0.0004377332594542368
+      hid_dim: 32
+      lr: 0.0001295728259954103
+      num_layers: 3
+      w1: 0.0015315407831563929
+      w2: 0.00030337090287387415
+      w3: 2.937874265931293e-05
+      w4: 0.07062761986925749
+      w5: 0.000729774163413437
+      weight_decay: 4.5275966751412965e-06
+  structural:
+    '0.0':
+      dropout: 0.0004973640931260974
+      hid_dim: 32
+      lr: 0.01766659013198932
+      num_layers: 3
+      w1: 0.014828471398794434
+      w2: 0.0009258634492397584
+      w3: 0.0003376719563126557
+      w4: 4.092118371503582e-05
+      w5: 0.008621895707490517
+      weight_decay: 0.009647321201534904
+    '0.5':
+      dropout: 0.0056437771169915284
+      hid_dim: 32
+      lr: 0.029642843090757782
+      num_layers: 3
+      w1: 0.1308911584040183
+      w2: 0.0001022842111285758
+      w3: 0.0011412726349180717
+      w4: 0.07019460827542169
+      w5: 0.00025701851531947635
+      weight_decay: 0.029358827350826868
+    '1.0':
+      dropout: 0.01939784105256866
+      hid_dim: 32
+      lr: 0.013499241634945609
+      num_layers: 3
+      w1: 0.3926197728809316
+      w2: 0.0003827512473821879
+      w3: 0.0007975113356087312
+      w4: 0.9984001485496282
+      w5: 0.009259022777416828
+      weight_decay: 0.005112643683639038
+GADNR:
+  cont_struc:
+    '0.0':
+      deg_dec_layers: 5
+      dropout: 0.013661815663882764
+      fea_dec_layers: 5
+      hid_dim: 64
+      lambda_loss1: 0.03898409586824729
+      lambda_loss2: 5.612499229037715e-05
+      lambda_loss3: 0.18520571797800758
+      lr: 3.886869667882828e-06
+      num_layers: 4
+      num_neigh: 5
+      sample_size: 6
+      sample_time: 9
+      weight_decay: 0.08715886433368587
+    '0.5':
+      deg_dec_layers: 5
+      dropout: 0.001990312248050495
+      fea_dec_layers: 5
+      hid_dim: 64
+      lambda_loss1: 1.3456605597756812e-05
+      lambda_loss2: 0.025526331341352272
+      lambda_loss3: 0.16365975368522753
+      lr: 1.0908587829565319e-06
+      num_layers: 4
+      num_neigh: 20
+      sample_size: 6
+      sample_time: 7
+      weight_decay: 0.01846168673306976
+    '1.0':
+      deg_dec_layers: 5
+      dropout: 3.5873290714510957e-05
+      fea_dec_layers: 5
+      hid_dim: 64
+      lambda_loss1: 3.378908975551139e-05
+      lambda_loss2: 0.0001842825070141431
+      lambda_loss3: 0.1336571589653522
+      lr: 0.00014258545220551848
+      num_layers: 4
+      num_neigh: 10
+      sample_size: 6
+      sample_time: 9
+      weight_decay: 0.03042082004469375
+  contextual:
+    '0.0':
+      deg_dec_layers: 5
+      dropout: 0.00044630840234312347
+      fea_dec_layers: 5
+      hid_dim: 64
+      lambda_loss1: 0.26293701640153194
+      lambda_loss2: 0.18270656604400395
+      lambda_loss3: 0.949424290709303
+      lr: 0.0004154818520557382
+      num_layers: 4
+      num_neigh: 5
+      sample_size: 6
+      sample_time: 9
+      weight_decay: 1.3441414891605799e-06
+    '0.5':
+      deg_dec_layers: 5
+      dropout: 1.4936758153285415e-06
+      fea_dec_layers: 5
+      hid_dim: 64
+      lambda_loss1: 1.0370290236796567e-05
+      lambda_loss2: 1.1655379483329783e-05
+      lambda_loss3: 1.2730902023724384e-05
+      lr: 4.287432038462233e-05
+      num_layers: 4
+      num_neigh: 5
+      sample_size: 6
+      sample_time: 10
+      weight_decay: 1.1986386372015847e-06
+    '1.0':
+      deg_dec_layers: 5
+      dropout: 0.0074130589062217055
+      fea_dec_layers: 5
+      hid_dim: 64
+      lambda_loss1: 0.04448429937967932
+      lambda_loss2: 0.0005778844470219161
+      lambda_loss3: 0.0004200572824862554
+      lr: 4.807912467015186e-06
+      num_layers: 4
+      num_neigh: 10
+      sample_size: 6
+      sample_time: 5
+      weight_decay: 0.013964135559938336
+  dice:
+    '0.0':
+      deg_dec_layers: 5
+      dropout: 0.05904920312983813
+      fea_dec_layers: 5
+      hid_dim: 64
+      lambda_loss1: 1.670394811743161e-05
+      lambda_loss2: 3.072644246257695e-05
+      lambda_loss3: 0.018979882019275657
+      lr: 0.00014780454178728967
+      num_layers: 4
+      num_neigh: 10
+      sample_size: 6
+      sample_time: 7
+      weight_decay: 0.0017534601510974925
+    '0.5':
+      deg_dec_layers: 5
+      dropout: 0.00010535032069456842
+      fea_dec_layers: 5
+      hid_dim: 64
+      lambda_loss1: 0.18097899322839234
+      lambda_loss2: 0.09629259847185785
+      lambda_loss3: 0.7018268034622867
+      lr: 1.0504835163322542e-06
+      num_layers: 4
+      num_neigh: 10
+      sample_size: 6
+      sample_time: 9
+      weight_decay: 0.00011852883171223191
+    '1.0':
+      deg_dec_layers: 5
+      dropout: 1.3532415659992369e-06
+      fea_dec_layers: 5
+      hid_dim: 64
+      lambda_loss1: 1.2244698924198527e-05
+      lambda_loss2: 0.0003888272475379225
+      lambda_loss3: 0.653907696970857
+      lr: 3.0330258144260338e-05
+      num_layers: 4
+      num_neigh: -1
+      sample_size: 6
+      sample_time: 9
+      weight_decay: 0.5712512882146332
+  path:
+    '0.0':
+      deg_dec_layers: 5
+      dropout: 0.5897460332236079
+      fea_dec_layers: 5
+      hid_dim: 64
+      lambda_loss1: 0.19813927405967582
+      lambda_loss2: 0.002269188029863256
+      lambda_loss3: 0.45101904102089413
+      lr: 1.2646872252991658e-06
+      num_layers: 4
+      num_neigh: -1
+      sample_size: 6
+      sample_time: 6
+      weight_decay: 0.004286130769757502
+    '0.5':
+      deg_dec_layers: 5
+      dropout: 0.002726543419512197
+      fea_dec_layers: 5
+      hid_dim: 64
+      lambda_loss1: 1.0227606240987523e-05
+      lambda_loss2: 0.0007048870892180045
+      lambda_loss3: 1.0570885104901156e-05
+      lr: 0.000358991285348799
+      num_layers: 4
+      num_neigh: 20
+      sample_size: 6
+      sample_time: 6
+      weight_decay: 0.0016450110962218547
+    '1.0':
+      deg_dec_layers: 5
+      dropout: 0.0071116373378123056
+      fea_dec_layers: 5
+      hid_dim: 64
+      lambda_loss1: 0.00662612329033163
+      lambda_loss2: 0.6500347276846681
+      lambda_loss3: 1.4966661477714009e-05
+      lr: 2.966151260456765e-07
+      num_layers: 4
+      num_neigh: 5
+      sample_size: 6
+      sample_time: 6
+      weight_decay: 0.006273781331161933
+  path_dice:
+    '0.0':
+      deg_dec_layers: 5
+      dropout: 1.0559077033942268e-05
+      fea_dec_layers: 5
+      hid_dim: 64
+      lambda_loss1: 0.0018050929402507372
+      lambda_loss2: 0.2185535161216585
+      lambda_loss3: 0.06684504328937443
+      lr: 0.00010976542182076985
+      num_layers: 4
+      num_neigh: 10
+      sample_size: 6
+      sample_time: 5
+      weight_decay: 0.00147286863118556
+    '0.5':
+      deg_dec_layers: 5
+      dropout: 0.14615467437265334
+      fea_dec_layers: 5
+      hid_dim: 64
+      lambda_loss1: 0.0008882691113270092
+      lambda_loss2: 0.24032223429515007
+      lambda_loss3: 0.010873082728047892
+      lr: 4.240940220616081e-05
+      num_layers: 4
+      num_neigh: 20
+      sample_size: 6
+      sample_time: 8
+      weight_decay: 1.5752594492274603e-05
+    '1.0':
+      deg_dec_layers: 5
+      dropout: 3.093044529145583e-06
+      fea_dec_layers: 5
+      hid_dim: 64
+      lambda_loss1: 1.2499230891931119e-05
+      lambda_loss2: 0.3639549064508928
+      lambda_loss3: 0.27162221776280954
+      lr: 5.417408826160314e-07
+      num_layers: 4
+      num_neigh: 10
+      sample_size: 6
+      sample_time: 5
+      weight_decay: 0.0013933227360526774
+  structural:
+    '0.0':
+      deg_dec_layers: 5
+      dropout: 1.0504778158017972e-06
+      fea_dec_layers: 5
+      hid_dim: 64
+      lambda_loss1: 0.14343905485743416
+      lambda_loss2: 0.00011085829498411934
+      lambda_loss3: 0.06628132657112047
+      lr: 0.000698486256643866
+      num_layers: 4
+      num_neigh: -1
+      sample_size: 6
+      sample_time: 6
+      weight_decay: 4.30133998579853e-05
+    '0.5':
+      deg_dec_layers: 5
+      dropout: 0.07347890730301343
+      fea_dec_layers: 5
+      hid_dim: 64
+      lambda_loss1: 0.012859968961161157
+      lambda_loss2: 0.1478764613370717
+      lambda_loss3: 0.03138913065246736
+      lr: 0.00016854252905118512
+      num_layers: 4
+      num_neigh: 20
+      sample_size: 6
+      sample_time: 10
+      weight_decay: 0.004774232138195058
+    '1.0':
+      deg_dec_layers: 5
+      dropout: 0.04518473836563979
+      fea_dec_layers: 5
+      hid_dim: 64
+      lambda_loss1: 0.005410245660554053
+      lambda_loss2: 0.0001343166542511883
+      lambda_loss3: 0.05623476043271797
+      lr: 0.000108863133303385
+      num_layers: 4
+      num_neigh: -1
+      sample_size: 6
+      sample_time: 6
+      weight_decay: 7.391762142013784e-05
+GAE:
+  cont_struc:
+    '0.0':
+      dropout: 0.0005330982399727434
+      hid_dim: 128
+      lr: 0.001467656125693468
+      num_layers: 2
+      weight_decay: 1.3308454415564164e-06
+    '0.5':
+      dropout: 0.03190847490755184
+      hid_dim: 128
+      lr: 0.0017621589522890898
+      num_layers: 2
+      weight_decay: 1.304638034694499e-05
+    '1.0':
+      dropout: 0.0008871675936005888
+      hid_dim: 128
+      lr: 0.001805380450250463
+      num_layers: 2
+      weight_decay: 0.000876924534175846
+  contextual:
+    '0.0':
+      dropout: 0.03430678593380114
+      hid_dim: 128
+      lr: 0.0015525503888329409
+      num_layers: 2
+      weight_decay: 1.0254746925714134e-06
+    '0.5':
+      dropout: 2.9925950562121057e-05
+      hid_dim: 128
+      lr: 0.08132026419018099
+      num_layers: 2
+      weight_decay: 0.0003478562942803586
+    '1.0':
+      dropout: 0.05318502624680422
+      hid_dim: 128
+      lr: 0.08866327879331028
+      num_layers: 2
+      weight_decay: 0.00034130738542359837
+  dice:
+    '0.0':
+      dropout: 3.5536346247959266e-05
+      hid_dim: 128
+      lr: 0.0776593712988881
+      num_layers: 2
+      weight_decay: 5.724121645609859e-06
+    '0.5':
+      dropout: 0.0007704845048463699
+      hid_dim: 128
+      lr: 0.001872019310470134
+      num_layers: 2
+      weight_decay: 0.00014436712232577568
+    '1.0':
+      dropout: 0.025458598370438103
+      hid_dim: 128
+      lr: 0.09359347515107778
+      num_layers: 2
+      weight_decay: 2.8134182102009914e-06
+  path:
+    '0.0':
+      dropout: 0.00037085614371425065
+      hid_dim: 128
+      lr: 0.0015721744823673413
+      num_layers: 2
+      weight_decay: 0.0006201011693869063
+    '0.5':
+      dropout: 0.1546571304333392
+      hid_dim: 128
+      lr: 0.08331404163151601
+      num_layers: 2
+      weight_decay: 3.9497694511968767e-05
+    '1.0':
+      dropout: 2.2984842887277765e-05
+      hid_dim: 128
+      lr: 0.0019002227180489563
+      num_layers: 2
+      weight_decay: 2.27796946062211e-05
+  path_dice:
+    '0.0':
+      dropout: 9.966068249134925e-05
+      hid_dim: 128
+      lr: 0.0016326028385369269
+      num_layers: 2
+      weight_decay: 6.382100661902716e-05
+    '0.5':
+      dropout: 0.00230774427416103
+      hid_dim: 128
+      lr: 0.001871277575670716
+      num_layers: 2
+      weight_decay: 0.00019734844095322407
+    '1.0':
+      dropout: 0.016346464347596488
+      hid_dim: 128
+      lr: 0.005940207346598321
+      num_layers: 2
+      weight_decay: 0.00036935123094417537
+  structural:
+    '0.0':
+      dropout: 5.091609729807689e-06
+      hid_dim: 128
+      lr: 0.0012097287860829307
+      num_layers: 2
+      weight_decay: 0.0005402886389084517
+    '0.5':
+      dropout: 0.008181215225055638
+      hid_dim: 128
+      lr: 0.013053093064107487
+      num_layers: 2
+      weight_decay: 0.0007084345576071821
+    '1.0':
+      dropout: 3.197454916763749e-05
+      hid_dim: 128
+      lr: 0.0012373873128752077
+      num_layers: 2
+      weight_decay: 2.7284376893699154e-05

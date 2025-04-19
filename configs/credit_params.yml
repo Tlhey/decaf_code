@@ -1,0 +1,296 @@
+AdONE:
+  cont_struc:
+    dropout: 0.0018790075810048797
+    hid_dim: 256
+    lr: 3.257232417322206e-05
+    num_layers: 2
+    weight_decay: 0.33820602596515825
+  contextual:
+    dropout: 0.00014284744221176624
+    hid_dim: 256
+    lr: 1.0985889144369179e-05
+    num_layers: 2
+    weight_decay: 1.6071135645195468e-06
+  dice:
+    dropout: 0.00011522222091271784
+    hid_dim: 256
+    lr: 1.2347020325871737e-05
+    num_layers: 2
+    weight_decay: 0.017180880049637876
+  path:
+    dropout: 0.007810121129900935
+    epoch: 2
+    hid_dim: 256
+    lr: 0.0014723591999507945
+    num_layers: 2
+    weight_decay: 0.05770454845177916
+  path_dice:
+    dropout: 0.014852891063489393
+    hid_dim: 256
+    lr: 0.002140411014832015
+    num_layers: 2
+    weight_decay: 0.0033096635282650055
+  structural:
+    dropout: 6.332599894530654e-06
+    hid_dim: 256
+    lr: 0.014749198274782459
+    num_layers: 2
+    weight_decay: 0.0015446510380442721
+AnomalyDAE:
+  cont_struc:
+    dropout: 0.026841769751690104
+    emb_dim: 256
+    hid_dim: 256
+    lr: 1.092159626302056e-05
+    num_layers: 3
+    weight_decay: 0.0001834896433637682
+  contextual:
+    dropout: 0.03406566034672465
+    emb_dim: 256
+    hid_dim: 256
+    lr: 1.0136818984647238e-05
+    num_layers: 3
+    weight_decay: 2.870271831100632e-05
+  dice:
+    dropout: 0.009217115458709143
+    emb_dim: 256
+    hid_dim: 256
+    lr: 1.1640906094062814e-05
+    num_layers: 3
+    weight_decay: 0.3263343771328066
+  path:
+    dropout: 8.4083446560198e-05
+    emb_dim: 256
+    hid_dim: 256
+    lr: 1.0071200345491855e-05
+    num_layers: 3
+    weight_decay: 0.4288492113884986
+  path_dice:
+    dropout: 0.0005249476524808252
+    emb_dim: 256
+    hid_dim: 256
+    lr: 0.09925085303348562
+    num_layers: 3
+    weight_decay: 0.007823650650153348
+  structural:
+    dropout: 1.0653440722455647e-05
+    emb_dim: 256
+    hid_dim: 256
+    lr: 1.438014032663031e-05
+    num_layers: 3
+    weight_decay: 0.6077118957350494
+CONAD:
+  cont_struc:
+    dropout: 0.007668323164782795
+    hid_dim: 256
+    lr: 0.00015532928296828574
+    num_layers: 5
+    weight_decay: 0.0032172248579237592
+  contextual:
+    dropout: 4.5763799752841345e-06
+    hid_dim: 256
+    lr: 0.0014841986376223446
+    num_layers: 5
+    weight_decay: 0.00014101704500985626
+  dice:
+    dropout: 0.006664435211789307
+    hid_dim: 256
+    lr: 0.002585152412584697
+    num_layers: 5
+    weight_decay: 0.00011381398169913658
+  path:
+    dropout: 2.295617562801739e-05
+    hid_dim: 256
+    lr: 0.0018806709631917498
+    num_layers: 5
+    weight_decay: 0.0006189933559277379
+  path_dice:
+    dropout: 9.304836771239883e-05
+    hid_dim: 256
+    lr: 0.0009772755897349285
+    num_layers: 5
+    weight_decay: 0.0006693484032081345
+  structural:
+    dropout: 0.004404696653735837
+    hid_dim: 256
+    lr: 0.0001272243403376076
+    num_layers: 5
+    weight_decay: 7.67276037144448e-06
+CoLA:
+  cont_struc:
+    dropout: 0.0005675144441677816
+    hid_dim: 64
+    lr: 3.775525871914927e-05
+    num_layers: 5
+    weight_decay: 0.0004041557532200587
+  contextual:
+    dropout: 6.88383241462989e-05
+    hid_dim: 64
+    lr: 0.00031804529906259726
+    num_layers: 5
+    weight_decay: 0.001462287578583365
+  dice:
+    dropout: 3.0051774246303396e-05
+    hid_dim: 64
+    lr: 0.00020527914969335916
+    num_layers: 5
+    weight_decay: 2.311174667316252e-05
+  path:
+    dropout: 0.0002978564490725386
+    hid_dim: 64
+    lr: 0.0053595179303056305
+    num_layers: 5
+    weight_decay: 0.00017876469800448094
+  path_dice:
+    dropout: 1.2995604050317195e-06
+    hid_dim: 64
+    lr: 0.0029744405261931907
+    num_layers: 5
+    weight_decay: 0.00016271087365922604
+  structural:
+    dropout: 0.002769802350639684
+    hid_dim: 64
+    lr: 4.156138278619756e-05
+    num_layers: 5
+    weight_decay: 0.009741129185034246
+DOMINANT:
+  cont_struc:
+    dropout: 0.03998730170831392
+    hid_dim: 128
+    lr: 0.0011223422032815744
+    num_layers: 4
+    weight_decay: 0.005468284345380701
+  contextual:
+    dropout: 0.0022280577784623595
+    hid_dim: 128
+    lr: 0.001437191601507354
+    num_layers: 4
+    weight_decay: 5.2933194778887067e-05
+  dice:
+    dropout: 0.005146533404825371
+    hid_dim: 128
+    lr: 0.0007720280807820064
+    num_layers: 4
+    weight_decay: 1.8295883252877205e-06
+  path:
+    dropout: 0.02329781486936245
+    hid_dim: 128
+    lr: 0.0006172672538843063
+    num_layers: 4
+    weight_decay: 1.1043509770332447e-06
+  path_dice:
+    dropout: 0.004070904161679925
+    hid_dim: 128
+    lr: 0.0004267220519556719
+    num_layers: 4
+    weight_decay: 1.5021522194120233e-06
+  structural:
+    dropout: 1.1454801743353488e-06
+    hid_dim: 128
+    lr: 0.0014535240129725574
+    num_layers: 4
+    weight_decay: 0.0006635599929823192
+DONE:
+  cont_struc:
+    dropout: 9.89109262897615e-06
+    hid_dim: 256
+    lr: 0.00011478707524309151
+    num_layers: 3
+    w1: 0.0006287904801344279
+    w2: 1.3901473993544606e-05
+    w3: 0.014732573642396603
+    w4: 0.0009585651743369226
+    w5: 0.0015233243669529387
+    weight_decay: 0.009233032701354692
+  contextual:
+    dropout: 0.0003793927433182985
+    hid_dim: 256
+    lr: 0.00011775749582029344
+    num_layers: 3
+    w1: 0.0013403308028228599
+    w2: 0.26452597258061566
+    w3: 0.005800387486855804
+    w4: 0.002589497375689378
+    w5: 0.060038753666614986
+    weight_decay: 0.00491860714250313
+  dice:
+    dropout: 1.8109907165116213e-06
+    hid_dim: 256
+    lr: 1.1595397007201616e-05
+    num_layers: 3
+    w1: 0.20647138750275726
+    w2: 0.8890511807044708
+    w3: 0.02268684657360351
+    w4: 0.8327064803131123
+    w5: 0.7712505129311399
+    weight_decay: 1.4290934987736774e-05
+  path:
+    dropout: 0.013368559423608935
+    hid_dim: 256
+    lr: 4.708087085558303e-05
+    num_layers: 3
+    w1: 0.00018059524185337942
+    w2: 0.0005421981462990023
+    w3: 1.4194998440652042e-05
+    w4: 0.7809942070726402
+    w5: 0.003143143227933701
+    weight_decay: 0.06566827469353323
+  path_dice:
+    dropout: 0.0002667054412485645
+    hid_dim: 256
+    lr: 0.00015130430346193326
+    num_layers: 3
+    w1: 0.0062467530004501415
+    w2: 0.07704524050861812
+    w3: 0.029745268630908452
+    w4: 0.032862491400750156
+    w5: 1.1961833154789538e-05
+    weight_decay: 0.10788167844068362
+  structural:
+    dropout: 3.8484826971605025e-05
+    hid_dim: 256
+    lr: 3.5259182656314237e-05
+    num_layers: 3
+    w1: 0.08618462887811436
+    w2: 0.02392068116882696
+    w3: 1.7101741392628294e-05
+    w4: 0.750321302514956
+    w5: 0.11781946603718833
+    weight_decay: 1.0335531315219028e-06
+GAE:
+  cont_struc:
+    dropout: 0.001324871003831848
+    hid_dim: 256
+    lr: 0.08226803337363606
+    num_layers: 2
+    weight_decay: 0.0004466114783084755
+  contextual:
+    dropout: 9.022653769132095e-05
+    hid_dim: 256
+    lr: 0.023318104876686216
+    num_layers: 2
+    weight_decay: 1.8934794863321747e-05
+  dice:
+    dropout: 0.000956048994850445
+    hid_dim: 256
+    lr: 0.09855130468071585
+    num_layers: 2
+    weight_decay: 0.0010617753116810673
+  path:
+    dropout: 0.022633407385929526
+    hid_dim: 256
+    lr: 0.02258783524394835
+    num_layers: 2
+    weight_decay: 3.706787781797865e-05
+  path_dice:
+    dropout: 1.804508644991831e-06
+    hid_dim: 256
+    lr: 0.01597336553760645
+    num_layers: 2
+    weight_decay: 1.3478488913689341e-05
+  structural:
+    dropout: 0.0002583953077133492
+    hid_dim: 256
+    lr: 0.015445484992585528
+    num_layers: 2
+    weight_decay: 2.0592687521951565e-06
