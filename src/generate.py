@@ -1,147 +1,124 @@
-import sys
-import numpy as np
-import torch
-import random
-import argparse
-import math
 import os
-
-from utils.Preprocessing import load_data
+import numpy as np
+import argparse
+import shutil
 from utils.loader_HNN_GAD import *
+from utils.outlier_inject_cf import *
+from utils.Preprocessing import *
+from torch_geometric.utils import dense_to_sparse
 
-from torch_geometric.data import Data
-from torch_geometric.utils import from_scipy_sparse_matrix
-import pickle
+def generate_synthetic_data(path, n=2000, z_dim=50, p=0.4, q=0.3, alpha=0.01, beta=0.01, threshold=0.6, dim=32):    
+    sens = np.random.binomial(n=1, p=p, size=n)
+    sens_repeat = np.repeat(sens.reshape(-1, 1), z_dim, axis=1)
+    sens_embedding = np.random.normal(loc=sens_repeat, scale=1, size=(n, z_dim))
+    labels = np.random.binomial(n=1, p=q, size=n)
+    labels_repeat = np.repeat(labels.reshape(-1, 1), z_dim, axis=1)
+    labels_embedding = np.random.normal(loc=labels_repeat, scale=1, size=(n, z_dim))
+    features_embedding = np.concatenate((sens_embedding, labels_embedding), axis=1)
+    weight = np.random.normal(loc=0, scale=1, size=(z_dim*2, dim))
+    # features = np.matmul(features_embedding, weight)
+    features = np.matmul(features_embedding, weight) + np.random.normal(loc=0, scale=1, size=(n, dim))
 
+    adj = np.zeros((n, n))
+    sens_sim = np.zeros((n, n))
+    labels_sim = np.zeros((n, n))
+    for i in range(n):
+        for j in range(i, n):  # i<=j
+            if i == j:
+                sens_sim[i][j] = -1
+                labels_sim[i][j] = -1
+                continue
+            sens_sim[i][j] = sens_sim[j][i] = (sens[i] == sens[j])
+            labels_sim[i][j] = labels_sim[j][i] = (labels[i] == labels[j])
+            # sim_ij = 1 - spatial.distance.cosine(embedding[i], embedding[j])  # [-1, 1]
+            # adj[i][j] = adj[j][i] = sim_ij + alpha * (sens[i] == sens[j])
 
+    similarities = cosine_similarity(features_embedding)  # n x n
+    similarities[np.arange(n), np.arange(n)] = -1
+    adj = similarities + alpha * sens_sim + beta * labels_sim
+    print('adj max: ', adj.max(), ' min: ', adj.min())
+    adj[np.where(adj >= threshold)] = 1
+    adj[np.where(adj < threshold)] = 0
+    edge_index, edge_attr = dense_to_sparse(torch.tensor(adj, dtype=torch.float))
+    edge_num = adj.sum()
+    # adj = sparse.csr_matrix(adj)
+    # features = np.concatenate((sens.reshape(-1,1), features), axis=1)
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset', type=str, default='german', help='Dataset to use')
+    # generate counterfactual
+    sens_flip = 1 - sens
+    sens_flip_repeat = np.repeat(sens_flip.reshape(-1, 1), z_dim, axis=1)
+    # sens_flip_embedding = np.random.normal(loc=sens_flip_repeat, scale=1, size=(n, z_dim))
+    sens_flip_embedding = sens_embedding
+    features_embedding = np.concatenate((sens_flip_embedding, labels_embedding), axis=1)
+    features_cf = np.matmul(features_embedding, weight) + np.random.normal(loc=0, scale=1, size=(n, dim))
+
+    adj_cf = np.zeros((n, n))
+    sens_cf_sim = np.zeros((n, n))
+    labels_cf_sim = np.zeros((n, n))
+    for i in range(n):
+        for j in range(i, n):
+            if i == j:
+                sens_cf_sim[i][j] = -1
+                labels_cf_sim[i][j] = -1
+                continue
+            sens_cf_sim[i][j] = sens_cf_sim[j][i] = (sens_flip[i] == sens_flip[j])
+            labels_cf_sim[i][j] = labels_cf_sim[j][i] = (labels[i] == labels[j])
+    
+    similarities_cf = cosine_similarity(features_cf)  # n x n
+    similarities_cf[np.arange(n), np.arange(n)] = -1
+    adj_cf = similarities_cf + alpha * sens_cf_sim + beta * labels_cf_sim
+    print('adj_cf max', adj_cf.max(), ' min: ', adj_cf.min())
+    adj_cf[np.where(adj_cf >= threshold)] = 1
+    adj_cf[np.where(adj_cf < threshold)] = 0
+    edge_index_cf, edge_attr_cf = dense_to_sparse(torch.tensor(adj_cf, dtype=torch.float))
+    # edge_index_cf = torch.nonzero(torch.from_numpy(adj_cf)).t().contiguous()
+    # adj_cf = sparse.csr_matrix(adj_cf)
+    # features_cf = np.concatenate((sens_flip.reshape(-1,1), features_cf), axis=1)
+
+    # statistics
+    # pre_analysis(adj, labels, sens)
+    # print('edge num: ', edge_num)
+    data = {'x': features, 'edge_index': edge_index, 'labels': labels, 'sens': sens, 'x_cf': features_cf, 'edge_index_cf': edge_index_cf, "edge_num": edge_num}
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    scio.savemat(path, data)
+    # print("(labels_cf_sim - labels_sim", (labels_cf_sim - labels_sim.sum()))
+    # print('data saved in ', path)
+    return data
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Generate synthetic.mat and flip_rate-labelled copies"
+    )
+    parser.add_argument(
+        '--output_dir',
+        type=str,
+        default='../data/dataset/synthetic',
+        help='Directory to save synthetic datasets'
+    )
+    parser.add_argument(
+        '--flip_rates',
+        nargs='+',
+        type=float,
+        default=[0.0, 0.5, 1.0],
+        help='List of flip rates for which to label as counterfactual distrubance'
+    )
     args = parser.parse_args()
-    
-    adj, features, labels, idx_train, idx_val, idx_test, sens, sens_idx, raw_data_info = load_data(path_root='', dataset=args.dataset)
-    label_number = len(labels) 
-    
-    # Ensure all data is in torch.Tensor format
-    features = torch.tensor(features, dtype=torch.float)
-    labels = torch.tensor(labels, dtype=torch.long)
-    sens = torch.tensor(sens, dtype=torch.float)
 
-    edge_index, edge_attr = from_scipy_sparse_matrix(adj)
-    data = Data(x=features, edge_index=edge_index, y=labels)
+    # ensure the output directory exists
+    os.makedirs(args.output_dir, exist_ok=True)
 
-    args.struc_drop_prob = 0.2
-    args.dice_ratio = 0.5
-    args.outlier_seed = 0
-    args.struc_clique_size = math.ceil(np.mean(np.sum(adj, axis=1)))
-    args.sample_size = args.struc_clique_size
-    args.outlier_num = math.ceil(data.num_nodes * 0.05)
-    
-    outlier_types = ['structural', 'contextual', 'dice', 'path', 'cont_struc', 'path_dice']
-    # for outlier_type in outlier_types:
-    #     args.outlier_type = outlier_type
-    #     data_mod, y_outlier = outlier_injection(args, data)
-    #     data_mod.y = y_outlier
+    # 1) generate the base synthetic dataset (contains both original & CF graphs)
+    base_path = os.path.join(args.output_dir, 'synthetic.mat')
+    print(f"Generating base synthetic dataset → {base_path}")
+    generate_synthetic_data(base_path)
 
-    #     filename = f"injected_data/{args.dataset}/{args.dataset}_{outlier_type}.pkl"
-    #     with open(filename, 'wb') as f:
-    #         pickle.dump(data_mod, f)
-    #     print(f"Data with {outlier_type} outliers has been generated and saved as {filename}.")
+    # 2) for each flip_rate, make a copy named synthetic_{rate}.mat
+    #    (NOTE: upstream generate_synthetic_data currently always does full flip;
+    #     these copies are identical placeholders)
+    for rate in args.flip_rates:
+        dest_path = os.path.join(args.output_dir, f'synthetic_{rate}.mat')
+        shutil.copyfile(base_path, dest_path)
+        print(f"Copied base dataset for flip_rate={rate} → {dest_path}")
 
-
-# import os
-# import math
-# import numpy as np
-# import random
-# from scipy import sparse
-# import scipy.io as scio
-# import argparse 
-# import optuna
-# import pickle
-# from sklearn.preprocessing import normalize
-# from sklearn.metrics import roc_auc_score, f1_score, accuracy_score
-# from sklearn.metrics.pairwise import cosine_similarity
-# import torch
-# from torch_geometric.utils import from_scipy_sparse_matrix
-# from torch_geometric.data import Data
-# from pygod.detector import AdONE, ANOMALOUS, AnomalyDAE, CoLA, CONAD, DMGD, DOMINANT, DONE, GAAN, GADNR, GAE, GUIDE
-# from utils.outlier_inject_cf import *
-
-# def generate_and_save_outlier_data(args, data, data_cf, outlier_types, flip_rate, save_dir='injected_data'):
-#     if not os.path.exists(save_dir):
-#         os.makedirs(save_dir)
-
-#     for outlier_type in outlier_types:
-#         args.outlier_type = outlier_type
-#         data_mod, data_mod_cf, y_outlier = outlier_injection_cf(args, data, data_cf)
-#         data_mod.y = y_outlier
-
-#         # adj_mod = sparse.csr_matrix((np.ones(data_mod.edge_index.shape[1]), (data_mod.edge_index[0], data_mod.edge_index[1])), shape=(data_mod.num_nodes, data_mod.num_nodes))
-#         # adj_mod_cf = sparse.csr_matrix((np.ones(data_mod_cf.edge_index.shape[1]), (data_mod_cf.edge_index[0], data_mod_cf.edge_index[1])), shape=(data_mod_cf.num_nodes, data_mod_cf.num_nodes))
-
-#         # filename = f"{save_dir}/synthetic_{flip_rate}_{outlier_type}.pkl"
-#         # scio.savemat(filename, {
-#         #     'x': data_mod.x,
-#         #     'edge_index': data_mod.edge_index,
-#         #     'y': data_mod.y,
-#         #     'x_cf': data_mod_cf.x,
-#         #     'adj_cf': adj_mod_cf,
-#         #     'y_cf': data_mod_cf.y
-#         # })
-#         filename = f"{save_dir}/synthetic/synthetic_{flip_rate}_{outlier_type}.pkl"
-#         data_dict = {
-#             'data_mod': data_mod,
-#             'data_mod_cf': data_mod_cf
-#         }
-#         with open(filename, 'wb') as f:
-#             pickle.dump(data_dict, f)
-#         print(f"Data with {outlier_type} outliers has been generated and saved as {filename}.")
-        
-# def load_synthetic(path, label_number=1000):
-#     data = scio.loadmat(path)
-#     features = data['x']
-#     features_cf = data['x_cf']
-#     adj = data['adj']
-#     adj_cf = data['adj_cf']
-#     labels = data['y']
-#     labels_cf = data['y_cf']
-#     sens = data['sens'][0]
-#     sens_cf = data['sens_cf'][0]
-#     features = np.concatenate([sens.reshape(-1,1), features], axis=1)
-#     features_cf = np.concatenate([sens_cf.reshape(-1,1), features_cf], axis=1)
-#     raw_data_info = {}
-#     raw_data_info['adj'] = adj
-#     raw_data_info['w'] = data['w']
-#     raw_data_info['w_s'] = data['w_s'][0][0]
-#     raw_data_info['z'] = data['z']
-#     raw_data_info['v'] = data['v']
-#     raw_data_info['feat_idxs'] = data['feat_idxs'][0]
-#     raw_data_info['alpha'] = data['alpha'][0][0]
-#     features = torch.FloatTensor(features)
-#     features_cf = torch.FloatTensor(features_cf)
-#     return sens, adj, features, labels, sens_cf, adj_cf, features_cf, labels_cf, raw_data_info
-
-
-# if __name__ == "__main__":
-#     parser = argparse.ArgumentParser()
-#     args = parser.parse_args()
-#     for flip_rate in [0.0, 0.5, 1.0]:
-#         path_synthetic = f'synthetic/synthetic_{flip_rate}.mat'
-#         sens, adj, features, labels, sens_cf, adj_cf, features_cf, labels_cf, raw_data_info = load_synthetic(path=path_synthetic)
-        
-#         edge_index, edge_attr = from_scipy_sparse_matrix(adj)
-#         edge_index_cf, edge_attr_cf = from_scipy_sparse_matrix(adj_cf)
-        
-#         data = Data(x=features, edge_index=edge_index, y=labels)
-#         data_cf = Data(x=features_cf, edge_index=edge_index_cf, y=labels_cf)
-
-#         args.struc_drop_prob = 0.2
-#         args.dice_ratio = 0.5
-#         args.outlier_seed = 0
-#         args.struc_clique_size = math.ceil(np.mean(np.sum(adj, axis=1)))
-#         args.sample_size = args.struc_clique_size
-#         args.outlier_num = math.ceil(data.num_nodes * 0.05)
-        
-#         outlier_types = ['structural', 'contextual', 'dice', 'path', 'cont_struc', 'path_dice']
-#         generate_and_save_outlier_data(args, data, data_cf, outlier_types, flip_rate)
+if __name__ == '__main__':
+    main()

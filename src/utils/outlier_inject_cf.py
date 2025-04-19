@@ -239,7 +239,6 @@ def gen_path_dice_outliers_cf(data, data_cf, n, sample_size, dice_ratio, random_
 def outlier_injection_cf(args, data, data_cf):  
     
     # args = preset_parameters(args)
-    
     if args.outlier_type=='structural':
         clique_num = math.ceil(args.outlier_num / args.struc_clique_size)
         data, data_cf, y_outlier = gen_structural_outliers_cf(data, data_cf, args.struc_clique_size, clique_num, args.struc_drop_prob, None, args.outlier_seed)
