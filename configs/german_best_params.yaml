@@ -1,0 +1,54 @@
+CustomDOMINANT:
+    cont_struc:
+        lr: 0.0006870129496561236
+        dropout: 0.09121884329967858
+        weight_decay: 0.0001837889093573683
+        num_layers: 5
+        hid_dim: 128
+        rec_weight: 5.536929652494667
+        cf_weight: 4.196147817958351
+        ds_weight: 0.7974044764142809
+        adv_weight: 0.13737458155433704
+    contextual:
+       'lr': 0.0006955693498182202, 'dropout': 0.015935445915892275, 'weight_decay': 0.010182048197832954, 'num_layers': 5, 'hid_dim': 256, 'rec_weight': 1.2372887391861849e-05, 'cf_weight': 213.51204717899822, 'ds_weight': 0.15376008728409946, 'adv_weight': 0.6311363926207715
+    dice:
+        'lr': 0.0009387225901745448, 'dropout': 0.011024093717739776, 'weight_decay': 0.0021675021433929815, 'num_layers': 5, 'hid_dim': 128, 'rec_weight': 0.5473244790819584, 'cf_weight': 0.11024923128624957, 'ds_weight': 1.737536338874007, 'adv_weight': 0.14528065237383458
+    path:
+        'lr': 0.0005209338731044734, 'dropout': 0.01934874310718015, 'weight_decay': 2.713325537245314e-06, 'num_layers': 5, 'hid_dim': 256, 'rec_weight': 2.910455827906879, 'cf_weight': 16.749681705586525, 'ds_weight': 0.25519322775277564, 'adv_weight': 23.70473712809536
+    path_dice:
+        'lr': 1.7271758390898683e-05, 'dropout': 0.09674499433299248, 'weight_decay': 0.003602756786335072, 'num_layers': 5, 'hid_dim': 128, 'rec_weight': 0.00014990400506212403, 'cf_weight': 11.772868996192168, 'ds_weight': 933.8454282603894, 'adv_weight': 0.2504077600969441
+    structural:
+        'lr': 0.000387916454465, 'dropout': 0.013297830799647853, 'weight_decay': 0.005865430112583047, 'num_layers': 5, 'hid_dim': 256, 'rec_weight': 0.8600119110120006, 'cf_weight': 3.6258298835018614, 'ds_weight': 9.3912212563944, 'adv_weight': 2.930823765983559
+CustomDONE:
+    cont_struc:
+        'lr': 2.6307246301562927e-05, 'dropout': 0.09786315258089281, 'weight_decay': 1.8066106031047067e-05, 'num_layers': 3, 'hid_dim': 64, 'rec_weight': 0.08450846821761329, 'cf_weight': 1.76542716038792, 'ds_weight': 83.40708463571247, 'adv_weight': 7.614017513555033
+    contextual:
+        'lr': 1.8241800026994725e-05, 'dropout': 0.010160292370268342, 'weight_decay': 2.377306312712014e-06, 'num_layers': 3, 'hid_dim': 256, 'rec_weight': 0.0027148857564744605, 'cf_weight': 0.23246051417886654, 'ds_weight': 11.87673874951905, 'adv_weight': 2.2930133982392356
+    dice:
+        'lr': 1.5700899144694892e-05, 'dropout': 0.06206960032495247, 'weight_decay': 0.000599394011538532, 'num_layers': 4, 'hid_dim': 128, 'rec_weight': 0.00018009749474820843, 'cf_weight': 114.2075505705231, 'ds_weight': 47.18763740889414, 'adv_weight': 3.9708272902787205
+    path:
+        lr: 0.0007592051208214697
+        dropout: 0.017423843106004512
+        weight_decay: 0.002638448789844238
+        num_layers: 4
+        hid_dim: 32
+        rec_weight: 0.0001717326536785619
+        cf_weight: 722.4249592190835
+        ds_weight: 26.28403435962699
+        adv_weight: 0.6841677393589456  
+    path_dice:
+        'lr': 2.6343179744721774e-05, 'dropout': 0.01579830482554283, 'weight_decay': 0.03823979756084327, 'num_layers': 5, 'hid_dim': 32, 'rec_weight': 2.039116241310969e-05, 'cf_weight': 0.1525853261695527, 'ds_weight': 2.8581435188019158, 'adv_weight': 0.9327288184379292
+    structural:
+        'lr': 0.000709347694452094, 'dropout': 0.02589286346385627, 'weight_decay': 1.1436451631261791e-05, 'num_layers': 5, 'hid_dim': 32, 'rec_weight': 9.250891473267428e-05, 'cf_weight': 1.1792094743902801, 'ds_weight': 3.5527952845739716, 'adv_weight': 421.56488718444393
+    
+CustomGADNR:
+    cont_struc:
+        'lr': 0.000838705253051434, 'dropout': 0.012273229601036939, 'weight_decay': 0.0027920834000988498, 'num_layers': 2, 'hid_dim': 64, 'rec_weight': 1.112407645106874, 'cf_weight': 23.25667446475673, 'ds_weight': 0.25954376770208093, 'adv_weight': 3.644627358761898
+    contextual:
+        'lr': 3.834750327674988e-05, 'dropout': 0.04634980603085222, 'weight_decay': 2.154875355508006e-05, 'num_layers': 2, 'hid_dim': 64, 'rec_weight': 0.0011374724205223668, 'cf_weight': 712.2568737514173, 'ds_weight': 69.71550996015696, 'adv_weight': 287.565790524162
+    dice:
+        'lr': 1.590421703618905e-05, 'dropout': 0.03851542070355649, 'weight_decay': 1.1298128099151391e-05, 'num_layers': 3, 'hid_dim': 64, 'rec_weight': 1.8409180845882573e-05, 'cf_weight': 583.5471084620807, 'ds_weight': 49.994813581699525, 'adv_weight': 0.00017708438158756682
+    path:
+        'lr': 5.641037383282184e-05, 'dropout': 0.014306320499359, 'weight_decay': 2.4857496213552457e-06, 'num_layers': 2, 'hid_dim': 32, 'rec_weight': 0.009851246479002903, 'cf_weight': 44.89893746991504, 'ds_weight': 5.8695387449601915e-05, 'adv_weight': 94.19913301295085
+    structual:
+        'lr': 0.00037047155296062194, 'dropout': 0.011523854101171686, 'weight_decay': 0.037002434593409794, 'num_layers': 5, 'hid_dim': 32, 'rec_weight': 0.00046609514966397075, 'cf_weight': 310.05727622625903, 'ds_weight': 1.2886305260615395e-05, 'adv_weight': 72.95624926474714
