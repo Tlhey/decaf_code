@@ -48,6 +48,8 @@ conda activate cfgad
 ```
 
 ## dataset
+<img width="1280" height="352" alt="image" src="https://github.com/user-attachments/assets/2a566c53-d086-4bd6-aef4-e5668629bcb2" />
+
 
 ## outlier inject
 outlier injection example:
