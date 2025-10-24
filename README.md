@@ -1,6 +1,8 @@
 # decaf_code
 
-repo for decaf
+This is the source code for the paper: [Enhancing Fairness in Autoencoders for Node-Level
+Graph Anomaly Detection](https://arxiv.org/abs/2508.10785).
+
 
 <!-- Fair-GAD-Decaf/
 │
