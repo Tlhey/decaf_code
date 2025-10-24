@@ -3,6 +3,9 @@
 This is the source code for the paper: [Enhancing Fairness in Autoencoders for Node-Level
 Graph Anomaly Detection](https://arxiv.org/abs/2508.10785).
 
+Our slides are here.
+
+<img width="1180" height="720" alt="image" src="https://github.com/user-attachments/assets/4bccce00-41e5-4e3e-a24e-f5f1e6051f24" />
 
 <!-- Fair-GAD-Decaf/
 │
@@ -48,7 +51,7 @@ conda activate cfgad
 ```
 
 ## dataset
-<img width="1280" height="352" alt="image" src="https://github.com/user-attachments/assets/2a566c53-d086-4bd6-aef4-e5668629bcb2" />
+<img width="909" height="250" alt="image" src="https://github.com/user-attachments/assets/2a566c53-d086-4bd6-aef4-e5668629bcb2" />
 
 
 ## outlier inject
